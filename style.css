@@ -1,0 +1,96 @@
+:root {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  --background-main: #f0f0f0;
+  --background-second: #404040;
+  --background-third: #e0e0e0;
+
+  --font-main: #c03344;
+  --font-second: #ff5e71;
+  background-color: var(--background-main);
+}
+h1 {
+  margin: 0;
+}
+tr {
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+tr:hover {
+  background-color: var(--background-main);
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  margin-left: 16rem;
+  margin-right: 16rem;
+  padding: 0;
+}
+.Title {
+  padding: 5px;
+  text-align: center;
+  color: var(--font-main);
+  font-family: cursive;
+  font-size: 40px;
+}
+.Game {
+  outline: var(--font-main) 3px solid;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.navbar {
+  padding: 0;
+  margin-left: -16rem;
+  width: 8rem;
+  height: 100vh;
+  background-color: var(--background-second);
+  position: fixed;
+  transition: width 600ms ease;
+}
+.navbar:hover {
+  width: 15.8rem;
+}
+
+.navTable {
+  position: absolute;
+  top: 25%;
+  font-size: 2.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.navElemnt1 {
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  color: var(--font-main);
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.navbar:hover .navElemnt2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navElemnt2 {
+  padding: 0.25rem;
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--font-main);
+  display: inline-block;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s ease;
+  opacity: 0;
+}
