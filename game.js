@@ -1,4 +1,5 @@
 import { scene18o } from "./Enunciados/18_ordinaria/18ordinaria.js";
+import { scene18e } from "./Enunciados/18_extraordinaria/18extraordinaria.js";
 
 const WIDTH = 800;
 const HEIGHT = 600;
@@ -7,11 +8,10 @@ var config = {
   width: WIDTH,
   height: HEIGHT,
   physics: {
-    default: "matter",
     arcade: {
       debug: true,
       gravity: {
-        y: 50,
+        y: 0,
       },
     },
     matter: {
@@ -22,7 +22,7 @@ var config = {
   parent: "PhaserContainer",
   backgroundColor: "0xcccccc",
   scale: "CENTER-BOTH",
-  scene: scene18o,
+  scene: [scene18e],
 };
 
 export const game = new Phaser.Game(config);
